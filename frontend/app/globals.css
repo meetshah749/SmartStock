@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Default Midnight Finance Dark Theme */
+  :root,
+  .dark {
+    --bg-main: #0B1020;
+    --bg-secondary: #11182B;
+    --bg-card: #151F35;
+    --bg-elevated: #1B2742;
+    --border: #263552;
+
+    --brand-primary: #3B82F6;
+    --brand-bright: #60A5FA;
+    --brand-deep: #1D4ED8;
+
+    --profit: #10B981;
+    --profit-light: #34D399;
+
+    --loss: #EF4444;
+    --loss-light: #F87171;
+
+    --warning: #F59E0B;
+    --info: #06B6D4;
+
+    --ai-violet: #8B5CF6;
+    --ai-light: #A78BFA;
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+  }
+
+  /* Clean Market Light Theme */
+  .light {
+    --bg-main: #F5F7FB;
+    --bg-secondary: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --bg-elevated: #F8FAFC;
+    --border: #E2E8F0;
+
+    --brand-primary: #2563EB;
+    --brand-bright: #3B82F6;
+    --brand-deep: #1D4ED8;
+
+    --profit: #059669;
+    --profit-light: #10B981;
+
+    --loss: #DC2626;
+    --loss-light: #EF4444;
+
+    --warning: #D97706;
+    --info: #0891B2;
+
+    --ai-violet: #7C3AED;
+    --ai-light: #8B5CF6;
+
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #64748B;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Tabular Numbers for Prices and Percentages */
+.font-numeric {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* Glassmorphism utility surfaces */
+.glass-panel {
+  background: rgba(21, 31, 53, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+}
